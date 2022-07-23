@@ -67,9 +67,13 @@ header .sns li a {
   color: #333;
 }
 
-header .btnMenu {
+header .btn_menu {
   font-size: 24px;
   color: #333;
+  display: none;
+}
+
+header #snb {
   display: none;
 }
 
@@ -146,8 +150,45 @@ footer {
     display: none;
   }
 
-  header .btnMenu {
+  header #snb {
     display: block;
+  }
+
+  header .btn_menu {
+    display: block;
+  }
+
+  header #snb a {
+    color: #555;
+  }
+
+  header #snb .sub_menu {
+    position: absolute;
+    padding: 10px 25px;
+    background-color: rgb(173, 179, 164);
+    border: 1px solid #999;
+    border-radius: 10px;
+    right: 5vw;
+    text-align: right;
+    opacity: 1;
+    transition: 0.4s;
+  }
+
+  header #snb .sub_menu.hide {
+    opacity: 0;
+  }
+
+  header #snb .sub_menu li {
+    padding: 10px 0px;
+    font: 16px/1 "Architects Daughter";
+  }
+
+  header #snb .sub_menu li a i {
+    margin-left: 8px;
+  }
+
+  figure .text {
+    top: 50%;
   }
 
   figure .text p {
