@@ -1,22 +1,10 @@
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap");
 
-/* COMMON */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+/* RESET */
+@import "reset";
 
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
+// COMMON
 body {
   background-color: black;
 }
@@ -55,14 +43,14 @@ header {
 
   .sns {
     display: flex;
-  }
 
-  li {
-    margin: 0px 10px;
+    li {
+      margin: 0px 10px;
 
-    a {
-      font-size: 16px;
-      color: #333;
+      a {
+        font-size: 16px;
+        color: #333;
+      }
     }
   }
 
@@ -170,6 +158,10 @@ footer {
         opacity: 1;
         transition: 0.4s;
 
+        &.hide {
+          opacity: 0;
+        }
+
         li {
           padding: 10px 0px;
           font: 16px/1 "Architects Daughter";
@@ -178,10 +170,6 @@ footer {
             margin-left: 8px;
           }
         }
-      }
-
-      .sub_menu.hide {
-        opacity: 0;
       }
     }
 
